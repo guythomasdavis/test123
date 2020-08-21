@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_atf_parameter_set">
+    <sys_atf_parameter_set action="DELETE">
+        <active>true</active>
+        <copied_from/>
+        <description>Number = Request Number
+Table = sc_request</description>
+        <order>1</order>
+        <parameters/>
+        <sys_class_name>sys_atf_parameter_set</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-08-17 19:29:36</sys_created_on>
+        <sys_id>15814f772f225410f1c859ab2799b6de</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>1</sys_name>
+        <sys_package display_value="Angular App" source="x_516183_angular_a">ed4ae0a72f4e1010f1c859ab2799b600</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Angular App">ed4ae0a72f4e1010f1c859ab2799b600</sys_scope>
+        <sys_update_name>sys_atf_parameter_set_15814f772f225410f1c859ab2799b6de</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-08-17 19:29:36</sys_updated_on>
+        <test display_value="TestCase2">8f0cca3b2f6e1410f1c859ab2799b69a</test>
+    </sys_atf_parameter_set>
+    <sys_variable_value action="DELETE" query="document_key=15814f772f225410f1c859ab2799b6de"/>
+    <sys_variable_value action="DELETE">
+        <document>sys_atf_parameter_set</document>
+        <document_key>15814f772f225410f1c859ab2799b6de</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-08-17 19:29:36</sys_created_on>
+        <sys_id>6191c3772f225410f1c859ab2799b659</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-08-17 19:29:36</sys_updated_on>
+        <value>sc_request</value>
+        <variable display_value="">7cf007772f225410f1c859ab2799b65d</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_atf_parameter_set</document>
+        <document_key>15814f772f225410f1c859ab2799b6de</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-08-17 19:29:36</sys_created_on>
+        <sys_id>6d91c3772f225410f1c859ab2799b658</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-08-17 19:29:36</sys_updated_on>
+        <value>SITM0961094</value>
+        <variable display_value="">46ff36372f225410f1c859ab2799b6d9</variable>
+    </sys_variable_value>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="SCO and SNOW Integration">ed4ae0a72f4e1010f1c859ab2799b600</application>
+        <file_path/>
+        <instance_id>2c0ee034dbd24cd452cec5970596192e</instance_id>
+        <instance_name>dev96570</instance_name>
+        <name>sys_atf_parameter_set_15814f772f225410f1c859ab2799b6de</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_atf_parameter_set"><sys_atf_parameter_set action="INSERT_OR_UPDATE"><active>true</active><copied_from/><description>Number = Request Number
+Table = sc_request</description><order>1</order><parameters/><sys_class_name>sys_atf_parameter_set</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2020-08-17 19:29:36</sys_created_on><sys_id>15814f772f225410f1c859ab2799b6de</sys_id><sys_mod_count>0</sys_mod_count><sys_name>1</sys_name><sys_package display_value="Angular App" source="x_516183_angular_a">ed4ae0a72f4e1010f1c859ab2799b600</sys_package><sys_policy/><sys_scope display_value="Angular App">ed4ae0a72f4e1010f1c859ab2799b600</sys_scope><sys_update_name>sys_atf_parameter_set_15814f772f225410f1c859ab2799b6de</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2020-08-17 19:29:36</sys_updated_on><test display_value="TestCase2">8f0cca3b2f6e1410f1c859ab2799b69a</test></sys_atf_parameter_set><sys_variable_value action="delete_multiple" query="document_key=15814f772f225410f1c859ab2799b6de"/><sys_variable_value action="INSERT_OR_UPDATE"><document>sys_atf_parameter_set</document><document_key>15814f772f225410f1c859ab2799b6de</document_key><order>100</order><sys_class_name>sys_variable_value</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2020-08-17 19:29:36</sys_created_on><sys_id>6191c3772f225410f1c859ab2799b659</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2020-08-17 19:29:36</sys_updated_on><value>sc_request</value><variable display_value="">7cf007772f225410f1c859ab2799b65d</variable></sys_variable_value><sys_variable_value action="INSERT_OR_UPDATE"><document>sys_atf_parameter_set</document><document_key>15814f772f225410f1c859ab2799b6de</document_key><order>100</order><sys_class_name>sys_variable_value</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2020-08-17 19:29:36</sys_created_on><sys_id>6d91c3772f225410f1c859ab2799b658</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2020-08-17 19:29:36</sys_updated_on><value>SITM0961094</value><variable display_value="">46ff36372f225410f1c859ab2799b6d9</variable></sys_variable_value></record_update>]]></payload>
+        <payload_hash>-533926324</payload_hash>
+        <record_name>1</record_name>
+        <reverted_from/>
+        <source>435c11142f221010f1c859ab2799b633</source>
+        <source_table>sys_update_set</source_table>
+        <state>current</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-08-17 19:29:36</sys_created_on>
+        <sys_id>ad91c3772f225410f1c859ab2799b65a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>173fde602810000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-08-17 19:29:36</sys_updated_on>
+        <type>Test Run Data Set</type>
+        <update_guid>e591c37724225410aca2d965b1a1ae5a</update_guid>
+        <update_guid_history>e591c37724225410aca2d965b1a1ae5a:-533926324</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-08-17 19:31:28</sys_created_on>
+        <sys_db_object display_value="" name="sys_atf_parameter_set">sys_atf_parameter_set</sys_db_object>
+        <sys_id>62728758fa464fad9899bf95a3d15df1</sys_id>
+        <sys_metadata>15814f772f225410f1c859ab2799b6de</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>1</sys_name>
+        <sys_package display_value="SCO and SNOW Integration" source="x_516183_angular_a">ed4ae0a72f4e1010f1c859ab2799b600</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="SCO and SNOW Integration">ed4ae0a72f4e1010f1c859ab2799b600</sys_scope>
+        <sys_scope_delete display_value="">0b9f83df385847dc83b2093b4cd55c10</sys_scope_delete>
+        <sys_update_name>sys_atf_parameter_set_15814f772f225410f1c859ab2799b6de</sys_update_name>
+        <sys_update_version display_value="sys_atf_parameter_set_15814f772f225410f1c859ab2799b6de">ad91c3772f225410f1c859ab2799b65a</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-08-17 19:31:28</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties">
+    <sys_properties action="DELETE">
+        <choices/>
+        <description/>
+        <ignore_cache>false</ignore_cache>
+        <is_private>false</is_private>
+        <name>x_516183_angular_a.abc</name>
+        <read_roles/>
+        <suffix>abc</suffix>
+        <sys_class_name>sys_properties</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-08-06 18:18:05</sys_created_on>
+        <sys_id>7cb706d4db621010e7032fb74896199f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_516183_angular_a.abc</sys_name>
+        <sys_package display_value="Angular App" source="x_516183_angular_a">ed4ae0a72f4e1010f1c859ab2799b600</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Angular App">ed4ae0a72f4e1010f1c859ab2799b600</sys_scope>
+        <sys_update_name>sys_properties_7cb706d4db621010e7032fb74896199f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-08-06 18:18:05</sys_updated_on>
+        <type>string</type>
+        <value>asdfasdf</value>
+        <write_roles/>
+    </sys_properties>
+    <sys_translated_text action="DELETE" query="documentkey=7cb706d4db621010e7032fb74896199f"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="SCO and SNOW Integration">ed4ae0a72f4e1010f1c859ab2799b600</application>
+        <file_path/>
+        <instance_id>0c55a1e4db1edb008264f70fbf961991</instance_id>
+        <instance_name>dev59879</instance_name>
+        <name>sys_properties_7cb706d4db621010e7032fb74896199f</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties"><sys_properties action="INSERT_OR_UPDATE"><choices/><description/><ignore_cache>false</ignore_cache><is_private>false</is_private><name>x_516183_angular_a.abc</name><read_roles/><suffix>abc</suffix><sys_class_name>sys_properties</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2020-08-06 18:18:05</sys_created_on><sys_id>7cb706d4db621010e7032fb74896199f</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_516183_angular_a.abc</sys_name><sys_package display_value="Angular App" source="x_516183_angular_a">ed4ae0a72f4e1010f1c859ab2799b600</sys_package><sys_policy/><sys_scope display_value="Angular App">ed4ae0a72f4e1010f1c859ab2799b600</sys_scope><sys_update_name>sys_properties_7cb706d4db621010e7032fb74896199f</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2020-08-06 18:18:05</sys_updated_on><type>string</type><value>asdfasdf</value><write_roles/></sys_properties><sys_translated_text action="delete_multiple" query="documentkey=7cb706d4db621010e7032fb74896199f"/></record_update>]]></payload>
+        <payload_hash>-260685608</payload_hash>
+        <record_name>x_516183_angular_a.abc</record_name>
+        <reverted_from/>
+        <source>cb4e0473dbd21010e7032fb748961954</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-08-06 18:18:05</sys_created_on>
+        <sys_id>07b7ca10dba21010e7032fb74896194f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>173c4fe971f0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-08-06 18:18:05</sys_updated_on>
+        <type>System Property</type>
+        <update_guid>0bb7ca1064a21010b0cf88a00d4dc54e</update_guid>
+        <update_guid_history>0bb7ca1064a21010b0cf88a00d4dc54e:-260685608</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-08-06 18:18:14</sys_created_on>
+        <sys_db_object display_value="" name="sys_properties">sys_properties</sys_db_object>
+        <sys_id>0180a22c898b49f497a11126c3baf344</sys_id>
+        <sys_metadata>7cb706d4db621010e7032fb74896199f</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_516183_angular_a.abc</sys_name>
+        <sys_package display_value="SCO and SNOW Integration" source="x_516183_angular_a">ed4ae0a72f4e1010f1c859ab2799b600</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="SCO and SNOW Integration">ed4ae0a72f4e1010f1c859ab2799b600</sys_scope>
+        <sys_scope_delete display_value="">0b9f83df385847dc83b2093b4cd55c10</sys_scope_delete>
+        <sys_update_name>sys_properties_7cb706d4db621010e7032fb74896199f</sys_update_name>
+        <sys_update_version display_value="sys_properties_7cb706d4db621010e7032fb74896199f">07b7ca10dba21010e7032fb74896194f</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-08-06 18:18:14</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

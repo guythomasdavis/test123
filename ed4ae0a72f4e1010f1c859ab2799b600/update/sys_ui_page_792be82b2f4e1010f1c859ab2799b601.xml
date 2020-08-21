@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_page">
+    <sys_ui_page action="INSERT_OR_UPDATE">
+        <category>general</category>
+        <client_script><![CDATA[										]]></client_script>
+        <description>HTML for Angular App (SNOW PROJECT)</description>
+        <direct>false</direct>
+        <endpoint>x_516183_angular_a_angular_app.do</endpoint>
+        <html><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
+<j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"></link>
+<div ng-app="angularapp" ng-controller="AngularAppCtrl as appctrl" ng-cloak="">
+	<dir class = "jambotrno">
+		<h1 class= "display-3">Request Status</h1>
+    <div class="container" ng-if="!appctrl.order">
+      <div class="row">
+        <div class="col-xs-12" style="text-align: center">
+			<strong>No request information was returned</strong>
+        </div>
+	  </div>
+	</div>
+    <div class="container" style="background-color: LightGrey; padding: 10px" ng-if="appctrl.order ${AMP}${AMP} appctrl.order.OrderHeader">
+      <div class="row">
+        <div class="col-xs-3" style="text-align: right">
+			<strong>Request Details</strong>
+        </div>
+        <div class="col-xs-3">
+          {{appctrl.order.OrderHeader.CustomerOrderNumber}}
+        </div>
+        <div class="col-xs-3" style="text-align: right">
+          <strong>Request Date</strong>
+        </div>
+        <div class="col-xs-3">
+          {{appctrl.order.OrderHeader.OrderCreationDate}}
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-3" style="text-align: right">
+          <strong>PO Number</strong>
+        </div>
+        <div class="col-xs-3">
+          {{appctrl.order.OrderHeader.InsightOrderNumber}}
+        </div>
+        <div class="col-xs-3" style="text-align: right">
+          <strong>PO Release</strong>
+        </div>
+        <div class="col-xs-3">
+          {{appctrl.order.OrderHeader.ReleaseNumber}}
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-3" style="text-align: right">
+          <strong>Request Status</strong>
+        </div>
+        <div class="col-xs-3">
+          {{appctrl.order.OrderHeader.OrderStatus}}
+        </div>
+        <div class="col-xs-6">
+        </div>
+      </div>
+    </div>
+    <hr />
+
+    <div class="container" ng-repeat="lineItem in appctrl.order.OrderLineItems">
+      <div class="row">
+        <div class="col-xs-3" style="text-align: right">
+          <strong>Issued Date</strong>
+        </div>
+        <div class="col-xs-3">
+          {{lineItem.Delivery.ActualGoodsIssueDate}}
+        </div>
+        <div class="col-xs-3" style="text-align: right">
+          <strong>Est Delivery Date</strong>
+        </div>
+        <div class="col-xs-3">
+          {{lineItem.Delivery.EstimatedDeliveryDate}}
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-3" style="text-align: right">
+          <strong>Carrier</strong>
+        </div>
+        <div class="col-xs-3">
+          {{lineItem.Delivery.Tracking.ExpDelivCompany}}
+        </div>
+        <div class="col-xs-3" style="text-align: right">
+          <strong>Tracking Number</strong>
+        </div>
+        <div class="col-xs-3">
+		 <a ng-if="lineItem.Delivery.Tracking.ExpDelivCompany==='UPSN'" ng-href="https://www.ups.com/track?tracknum={{lineItem.Delivery.Tracking.TrackingNumber}}" target="_blank">{{lineItem.Delivery.Tracking.TrackingNumber}}</a>
+		<a ng-if="lineItem.Delivery.Tracking.ExpDelivCompany==='FDE'" ng-href="http://www.fedex.com/Tracking?tracknumbers=          {{lineItem.Delivery.Tracking.TrackingNumber}}" target="_blank">{{lineItem.Delivery.Tracking.TrackingNumber}}</a>
+		 </div>	
+      </div>
+      <div class="row">
+        <div class="col-xs-3" style="text-align: right">
+          <strong>Quantity</strong>
+        </div>
+        <div class="col-xs-9">
+          {{lineItem.Delivery.Quantity | number: 0}}
+        </div>
+      </div>
+		
+      <div class="row" style="margin-top: 10px">
+        <div class="col-xs-3" style="text-decoration: underline;">
+			<strong>Quantity Shipped</strong>
+        </div>
+        <div class="col-xs-9" style="text-decoration: underline;">
+			<strong>Shipment Content</strong>
+        </div>
+      </div>
+      <div class="row" ng-repeat-end="">
+        <div class="col-xs-3">
+          {{lineItem.Delivery.Quantity | number: 0 }} of {{ lineItem.Quantity | number: 0 }}
+        </div>
+        <div class="col-xs-9">
+          {{lineItem.MaterialDescription}}$[SP]
+		  <span ng-if="lineItem.Delivery.SerialNumbers">(S/N's$[SP] 
+            <span ng-repeat="sn in lineItem.Delivery.SerialNumbers">{{sn.SerialNumber}}<span ng-if="!$last">,$[SP]</span></span>)
+          </span>
+        </div>
+      </div>
+      <hr />
+    </div>		
+	</dir>
+</div>
+<script src="x_516183_angular_a.angular_app_client_lo.jsdbx"></script>	
+</j:jelly>]]></html>
+        <name>angular_app</name>
+        <processing_script/>
+        <sys_class_name>sys_ui_page</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-07-22 17:23:23</sys_created_on>
+        <sys_id>792be82b2f4e1010f1c859ab2799b601</sys_id>
+        <sys_mod_count>164</sys_mod_count>
+        <sys_name>angular_app</sys_name>
+        <sys_package display_value="SCO and SNOW Integration" source="x_516183_angular_a">ed4ae0a72f4e1010f1c859ab2799b600</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SCO and SNOW Integration">ed4ae0a72f4e1010f1c859ab2799b600</sys_scope>
+        <sys_update_name>sys_ui_page_792be82b2f4e1010f1c859ab2799b601</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-08-13 20:40:21</sys_updated_on>
+    </sys_ui_page>
+</record_update>

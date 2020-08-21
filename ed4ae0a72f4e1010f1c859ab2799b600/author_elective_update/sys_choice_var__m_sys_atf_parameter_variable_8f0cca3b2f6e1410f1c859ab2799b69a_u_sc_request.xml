@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="DELETE" field="u_sc_request" table="var__m_sys_atf_parameter_variable_8f0cca3b2f6e1410f1c859ab2799b69a" version="3">
+        <sys_choice_set action="DELETE">
+            <element>u_sc_request</element>
+            <name>var__m_sys_atf_parameter_variable_8f0cca3b2f6e1410f1c859ab2799b69a</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on/>
+            <sys_id>410bf2ff2fee1410f1c859ab2799b6e9</sys_id>
+            <sys_mod_count/>
+            <sys_name>u_sc_request</sys_name>
+            <sys_package display_value="SCO and SNOW Integration" source="x_516183_angular_a">ed4ae0a72f4e1010f1c859ab2799b600</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="SCO and SNOW Integration">ed4ae0a72f4e1010f1c859ab2799b600</sys_scope>
+            <sys_update_name>sys_choice_var__m_sys_atf_parameter_variable_8f0cca3b2f6e1410f1c859ab2799b69a_u_sc_request</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-08-21 15:22:20</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="SCO and SNOW Integration">ed4ae0a72f4e1010f1c859ab2799b600</application>
+        <file_path/>
+        <instance_id>5b19fa85db5737c80ae3ac44d4961929</instance_id>
+        <instance_name>dev91461</instance_name>
+        <name>sys_choice_var__m_sys_atf_parameter_variable_8f0cca3b2f6e1410f1c859ab2799b69a_u_sc_request</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_choice action="DELETE" field="u_sc_request" table="var__m_sys_atf_parameter_variable_8f0cca3b2f6e1410f1c859ab2799b69a" version="3"><sys_choice_set action="DELETE"><element>u_sc_request</element><name>var__m_sys_atf_parameter_variable_8f0cca3b2f6e1410f1c859ab2799b69a</name><sys_class_name>sys_choice_set</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on/><sys_id>410bf2ff2fee1410f1c859ab2799b6e9</sys_id><sys_mod_count/><sys_name>u_sc_request</sys_name><sys_package display_value="SCO and SNOW Integration" source="x_516183_angular_a">ed4ae0a72f4e1010f1c859ab2799b600</sys_package><sys_policy/><sys_scope display_value="SCO and SNOW Integration">ed4ae0a72f4e1010f1c859ab2799b600</sys_scope><sys_update_name>sys_choice_var__m_sys_atf_parameter_variable_8f0cca3b2f6e1410f1c859ab2799b69a_u_sc_request</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2020-08-21 15:22:20</sys_updated_on></sys_choice_set></sys_choice></record_update>]]></payload>
+        <payload_hash>-1399167856</payload_hash>
+        <record_name>.u_sc_request</record_name>
+        <reverted_from/>
+        <source>27c9aa4d2f361010c07cf7ecf699b6e2</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-08-21 15:22:20</sys_created_on>
+        <sys_id>be5fe2812f761010c07cf7ecf699b6c9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>174119d13750000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-08-21 15:22:20</sys_updated_on>
+        <type>Choice list</type>
+        <update_guid>3a5fe28152761010fc2c62ae741a3cc9</update_guid>
+        <update_guid_history>3a5fe28152761010fc2c62ae741a3cc9:-1399167856,b5b92a4db2361010e3edc32de6e4e435:1147245811</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-08-21 15:22:20</sys_created_on>
+        <sys_db_object display_value="" name="sys_choice_set">sys_choice_set</sys_db_object>
+        <sys_id>2f50f62fb9ca4a20b1f6f2b87d7c7ee4</sys_id>
+        <sys_metadata>410bf2ff2fee1410f1c859ab2799b6e9</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>u_sc_request</sys_name>
+        <sys_package display_value="SCO and SNOW Integration" source="x_516183_angular_a">ed4ae0a72f4e1010f1c859ab2799b600</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="SCO and SNOW Integration">ed4ae0a72f4e1010f1c859ab2799b600</sys_scope>
+        <sys_scope_delete/>
+        <sys_update_name>sys_choice_var__m_sys_atf_parameter_variable_8f0cca3b2f6e1410f1c859ab2799b69a_u_sc_request</sys_update_name>
+        <sys_update_version display_value="sys_choice_var__m_sys_atf_parameter_variable_8f0cca3b2f6e1410f1c859ab2799b69a_u_sc_request">be5fe2812f761010c07cf7ecf699b6c9</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-08-21 15:22:20</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

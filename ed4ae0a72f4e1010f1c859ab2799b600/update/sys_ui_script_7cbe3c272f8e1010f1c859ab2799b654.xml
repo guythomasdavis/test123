@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_script">
+    <sys_ui_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <description>Client-side logic for Angular App.</description>
+        <global>false</global>
+        <name>x_516183_angular_a.angular_app_client_lo</name>
+        <script><![CDATA[angular.module('angularapp', []);
+angular.module('angularapp').controller('AngularAppCtrl', ['$scope', function ($scope) {
+  var vm = this;
+  vm.order = true;
+
+  var ga = new GlideAjax('InsightRequests');
+  ga.addParam('sysparm_name', 'getToken');
+  ga.getXML(tokenProcessor);
+
+  function tokenProcessor(response) {
+    var ga = new GlideAjax('InsightRequests');
+    ga.addParam('sysparm_name', 'getData');
+    ga.getXML(resultsProcessor);
+  }
+
+  function setLineItems(order) {
+    if (order.OrderLineItems) {
+      for (var i = 0; i < order.OrderLineItems.length; i++) {
+        var item = order.OrderLineItems[i];
+        var delivery = item.Delivery;
+        if (delivery.SerialNumbers) {
+          for (var s = 0; s < delivery.SerialNumbers.length; s++) {
+            var nbr = delivery.SerialNumbers[s].SerialNumber;
+            delivery.SerialNumbers[s].SerialNumber = nbr.trim();
+          }
+        }
+
+        if (order.Tracking) {
+          var deliveryNumber = delivery.DeliveryNumber;
+          for (var y = 0; y < order.Tracking.length; y++) {
+            if (deliveryNumber == order.Tracking[y].DeliveryNumber) {
+              delivery.Tracking = order.Tracking[y];
+            }
+          }
+        } else {
+          delivery.Tracking = {};
+        }
+      }
+    }
+	return order;
+  }
+
+  function resultsProcessor(response) {
+    var answer = response.responseXML.documentElement.getAttribute("answer");
+    var order = JSON.parse(answer).StatusOrderResponse.Order;
+    if (order) {
+       order = setLineItems(order);
+    }
+
+	$scope.$apply(function() {
+		vm.order = order;    
+	});
+ }
+  
+}]);
+]]></script>
+        <script_name>angular_app_client_logic</script_name>
+        <sys_class_name>sys_ui_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-07-22 18:51:52</sys_created_on>
+        <sys_id>7cbe3c272f8e1010f1c859ab2799b654</sys_id>
+        <sys_mod_count>139</sys_mod_count>
+        <sys_name>x_516183_angular_a.angular_app_client_lo</sys_name>
+        <sys_package display_value="SCO and SNOW Integration" source="x_516183_angular_a">ed4ae0a72f4e1010f1c859ab2799b600</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SCO and SNOW Integration">ed4ae0a72f4e1010f1c859ab2799b600</sys_scope>
+        <sys_update_name>sys_ui_script_7cbe3c272f8e1010f1c859ab2799b654</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-08-13 19:45:30</sys_updated_on>
+        <ui_type>10</ui_type>
+        <use_scoped_format>false</use_scoped_format>
+    </sys_ui_script>
+</record_update>

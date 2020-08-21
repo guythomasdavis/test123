@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_atf_step">
+    <sys_atf_step action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <copied_from/>
+        <description>Open the 'Request' form with id 'Request: SITM0961094'
+
+Warning: Using an existing record may cause unexpected behavior for this test&#13;
+See the documentation for Test Design Considerations</description>
+        <display_name>Open an Existing Record</display_name>
+        <inputs/>
+        <mugshots_cache_json/>
+        <notes/>
+        <order>1</order>
+        <snapshot/>
+        <step_config display_value="Open an Existing Record">5f2e0e535332120028bc29cac2dc34d3</step_config>
+        <sys_class_name>sys_atf_step</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-08-17 19:36:42</sys_created_on>
+        <sys_id>e1220bb72f225410f1c859ab2799b6bd</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>Open an Existing Record</sys_name>
+        <sys_package display_value="SCO and SNOW Integration" source="x_516183_angular_a">ed4ae0a72f4e1010f1c859ab2799b600</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SCO and SNOW Integration">ed4ae0a72f4e1010f1c859ab2799b600</sys_scope>
+        <sys_update_name>sys_atf_step_e1220bb72f225410f1c859ab2799b6bd</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-08-17 19:52:20</sys_updated_on>
+        <table>sc_request</table>
+        <test display_value="TestCase2">8f0cca3b2f6e1410f1c859ab2799b69a</test>
+        <timeout/>
+        <warning_message>Warning: Using an existing record may cause unexpected behavior for this test&#13;
+See the documentation for Test Design Considerations</warning_message>
+    </sys_atf_step>
+    <sys_variable_value action="delete_multiple" query="document_key=e1220bb72f225410f1c859ab2799b6bd"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_atf_step</document>
+        <document_key>e1220bb72f225410f1c859ab2799b6bd</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-08-17 19:36:42</sys_created_on>
+        <sys_id>393387b72f225410f1c859ab2799b6eb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-08-17 19:36:42</sys_updated_on>
+        <value>sc_request</value>
+        <variable display_value="">b124164e53a0220002c6435723dc34c5</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_atf_step</document>
+        <document_key>e1220bb72f225410f1c859ab2799b6bd</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-08-17 19:36:42</sys_created_on>
+        <sys_id>753387b72f225410f1c859ab2799b6eb</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-08-17 19:50:57</sys_updated_on>
+        <value/>
+        <variable display_value="">6e55da4e53a0220002c6435723dc34a0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_atf_step</document>
+        <document_key>e1220bb72f225410f1c859ab2799b6bd</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-08-17 19:36:42</sys_created_on>
+        <sys_id>b13387b72f225410f1c859ab2799b6eb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-08-17 19:36:42</sys_updated_on>
+        <value>6eed229047801200e0ef563dbb9a71c2</value>
+        <variable display_value="">ad351a4e53a0220002c6435723dc34f0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_atf_step</document>
+        <document_key>e1220bb72f225410f1c859ab2799b6bd</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-08-17 19:36:42</sys_created_on>
+        <sys_id>bd3387b72f225410f1c859ab2799b6ea</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-08-17 19:36:42</sys_updated_on>
+        <value>standard_ui</value>
+        <variable display_value="">17d732a9c7a333005e5c45b881c26007</variable>
+    </sys_variable_value>
+</record_update>

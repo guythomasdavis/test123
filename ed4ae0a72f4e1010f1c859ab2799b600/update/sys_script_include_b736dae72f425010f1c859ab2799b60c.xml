@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_516183_angular_a.InsightRequests</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description>Server-side logic for Angular App.</description>
+        <name>InsightRequests</name>
+        <script><![CDATA[var InsightRequests = Class.create();
+InsightRequests.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+
+	getEndpoint: function() {
+		var isProduction = gs.getProperty('x_516183_angular_a.production');
+		if (isProduction && isProduction.toLowerCase() == 'true') {
+			return 'https://insight-prod.apigee.net';				
+		}
+		else {
+			return 'https://insight-test.apigee.net';				
+		}			
+	},
+	getToken: function() {
+		try { 
+			var clientKey = gs.getProperty('x_516183_angular_a.client_key');
+			var r = new sn_ws.RESTMessageV2('InsightToken', 'GetToken');
+			r.setStringParameter('client_key', clientKey);
+			var endpoint = this.getEndpoint();
+			r.setEndpoint(endpoint + '/oauth/client_credential/accesstoken?grant_type=client_credentials');
+			var response = r.execute();
+			var responseBody = response.getBody();
+			var httpStatus = response.getStatusCode();
+			var token = JSON.parse(responseBody).access_token;
+			gs.getSession().putClientData('access_token', token);
+		}
+		catch(ex) {
+			var message = ex.message;
+		}		
+	},
+	getData: function() {
+		try { 
+			var clientId = gs.getProperty('x_516183_angular_a.client_id');
+			var releaseNumber = gs.getSession().getClientData('release_number');
+            var orderDate = gs.getSession().getClientData('order_date');
+            var orderEndDate = gs.getSession().getClientData('order_enddate');
+			var r = new sn_ws.RESTMessageV2('InsightData', 'GetData');
+			var body = {
+				"MT_Status2Request": { 
+					"StatusRequest": [ { 
+						"ClientID": clientId, 
+						"ReleaseNumber": releaseNumber,
+						"TrackingData": "X", 
+						"OrderCreationDateFrom": orderDate, 
+						"OrderCreationDateTo": orderEndDate 
+					} ] 
+				} 				
+			};
+			var sBody = JSON.stringify(body);
+			r.setRequestBody(sBody);
+			var token = gs.getSession().getClientData('access_token');
+			r.setStringParameter('access_token', token);
+			var endpoint = this.getEndpoint();
+			r.setEndpoint(endpoint + '/GetStatus');
+			var response = r.execute();
+			var responseBody = response.getBody();
+			var httpStatus = response.getStatusCode();
+			return responseBody;
+		}
+		catch(ex) {
+			var message = ex.message;
+			gs.log(ex.message, 'Insight');
+		}		
+	},
+	
+    type: 'InsightRequests'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-07-23 01:11:35</sys_created_on>
+        <sys_id>b736dae72f425010f1c859ab2799b60c</sys_id>
+        <sys_mod_count>32</sys_mod_count>
+        <sys_name>InsightRequests</sys_name>
+        <sys_package display_value="SCO and SNOW Integration" source="x_516183_angular_a">ed4ae0a72f4e1010f1c859ab2799b600</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="SCO and SNOW Integration">ed4ae0a72f4e1010f1c859ab2799b600</sys_scope>
+        <sys_update_name>sys_script_include_b736dae72f425010f1c859ab2799b60c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-08-17 15:49:31</sys_updated_on>
+    </sys_script_include>
+</record_update>
